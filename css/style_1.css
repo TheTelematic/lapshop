@@ -1,0 +1,497 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-oct-2016, 12:08:46
+    Author     : alumno
+*/
+
+@font-face{
+    font-family: general;
+    src: url('https://lapshop.com/fonts/font7.otf');
+}
+
+@font-face{
+    font-family: descripcion;
+    src: url('https://lapshop.com/fonts/font5c.otf');
+}
+
+@font-face{
+    font-family: miFuente;
+    src: url('https://lapshop.com/fonts/font.ttf');
+}
+
+body {
+    
+    margin: 0 auto;
+    border: solid #060680 1px;
+    font-family: general;
+}
+
+header{
+    color: #ffffff;
+    background-color: #2b2bee;
+    padding: 10px;
+}
+
+nav{
+    background-color: #0000b6;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    display: inline;
+    color: white;
+    width: 100px;
+}
+
+nav ul li a{
+    color: white;
+    border-right: none;
+    width: 100px;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav ul li a:hover{
+    background-color: #9a9aff;
+    width: 100px;
+}
+
+
+
+
+aside{
+    float: right;
+    width: 15%;
+    font-size: smaller;
+}
+
+section{
+    
+    
+    padding: 5px;
+}
+
+footer{
+    clear: both;
+    text-align: center;
+    background-color: #7a7aff;
+    padding: 20px;
+    margin-top: 0;
+}
+
+article{
+    border-bottom: 1px solid; 
+}
+
+#last{
+    border-bottom: none;
+}
+
+a{
+    color: darkblue;
+}
+
+#botones{
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#textoArticle{
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.categoria{
+    border: 1px #CCCCCC solid;
+    background-color: #ccccff;
+    
+}
+
+.listaCategorias a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.listaCategorias a .categoria:hover{
+    background-color: #6666ff;
+}
+
+.producto{
+    border: 1px #CCCCCC solid;
+    background-color: #ccffcc;
+    
+}
+
+.producto {
+    display: inline-block;
+    width: 100%;
+    margin: 5px;
+}
+
+.producto #imagen_producto{
+    width: 80px;
+    
+}
+
+.producto #nombre_producto{
+    font-size: larger;
+    width: 75%;
+}
+
+.producto #imagen_producto, .producto #nombre_producto{
+    float: left;
+    padding: 10px;
+}
+
+.producto #precio_producto{
+    float: right;
+    padding: 10px;
+    font-size: larger;
+    color: #03037a;
+}
+
+.producto #desc_producto{
+    font-size: medium;
+    margin-left: 0;
+    padding-left: 10px;
+    margin-top: 0;
+    float: left;
+    font-family: descripcion;
+    display: block;
+}
+
+.errorValidacion{
+    border: 1px #ff0000 solid;
+    background-color: #ff9999;
+}
+
+
+header img{
+    width: 50px;
+    float: left;
+    margin-left: 30px;
+}
+
+
+
+header a h1{
+    font-family: miFuente;
+    font-size: larger;
+    margin-left: 40px;
+    margin-right: 0;
+    padding-right: 0; 
+    width: fit-content;
+    display: inline-block;
+}
+
+section .tituloSection a{
+    border: 0.8px #3333ff solid;
+    background-color: #e4dffd;
+    padding: 2px;
+}
+
+section .tituloSection a, section .tituloSection img{
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+nav #buscador{
+    border: none;
+    height: 22px;
+    background-color: #c0b4ff;
+}
+nav form{
+    margin: 0;
+    padding: 0;
+}
+
+.categoria_oculta{
+    text-decoration: none;
+    width: 105px;
+    border-right: 1px #2b2bee solid;
+    padding: 5px;
+}
+
+.categoria_oculta:hover{
+    background-color: #7956f2;
+}
+
+#todas_categorias{
+    float: left;
+    display: inline-block;
+    background-color: #a48bf9;
+    text-decoration: none;
+}
+
+#todas_categorias a{
+    text-decoration: none;
+}
+
+section{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.contenidoSection{
+    float: left;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.categoria h4, .categoria span, .categoria h5{
+    padding: 5px;
+}
+
+
+.respuesta_contacto{
+    background-color: #33ff33;
+    border: 1px #00cc00 solid;
+    color: #000000;
+}
+
+.cajon_usuario{
+    border: 1px #000099 solid;
+    background-color: #3333ff;
+    float: right;
+    width: 370px;
+    display: inline-block;
+}
+
+.cajon_usuario #titulo_cajon_usuario, .cajon_usuario input{
+    align-content: center;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    font-size: small;
+}
+
+
+.cajon_usuario form{
+    margin-bottom: 0;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+.cajon_usuario input[type=text], .cajon_usuario input[type=password], .cajon_usuario input[type=submit]{
+    height: 20px;
+    width: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.ir_arriba{
+    background-color: #ccccff;
+    border: 0.5px #7777ff solid;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: block;
+    clear: both;
+}
+
+.ir_arriba:hover{
+    background-color: #afafff;
+}
+
+.par_top_productos{
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.par_top_productos .producto_top_izq, .par_top_productos .producto_top_der{
+    border: 1px red solid;
+    background-color: #f85e5e;
+    display: block;
+    margin: 10px;
+    width: 45%;
+}
+
+.par_top_productos .producto_top_izq{
+    float: left;
+}
+
+.par_top_productos .producto_top_der{
+    float: right;
+}
+
+.par_top_productos .producto_top_izq:hover, .par_top_productos .producto_top_der:hover{
+    background-color: whitesmoke;
+}
+
+.par_top_productos img{
+    width: 40%;
+    padding: 10px;
+    float: left;
+}
+
+.par_top_productos #nombre_producto{
+    margin: 5px;
+    float: left;
+    font-size: 2em;
+    width: 50%;
+    color: blue;
+}
+
+.par_top_productos #precio_producto{
+    margin: 5px;
+    float: left;
+    font-size: 3em;
+    color: red;
+}
+
+.producto_unico{
+    display: block;
+}
+
+.producto_unico img{
+    float: left;
+    width: 45%;
+    margin: 20px;
+}
+
+.producto_unico #nombre_producto{
+    float: left;
+    font-size: 3em;
+    width: 50%;
+}
+
+.producto_unico #precio_producto{
+    float: left;
+    font-size: 4em;
+    color: red;
+}
+
+.producto_unico div{
+    float: left;
+    width: 50%;
+}
+
+.producto_unico #codigo_producto{
+    margin-top: 30px;
+    border-top: 1px #5252ff dotted;
+}
+
+.login{
+    border: 2px #3333ff ridge;
+    background-color: #89c4f4;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#cambiarPass{
+    cursor: pointer;
+    display: inline-block;
+}
+
+#cambiarPass:hover{
+    background-color: #6699ff;
+    
+}
+
+.dato{
+    width: 100%;
+    margin: 5px;
+    display: inline-block;
+}
+
+.dato span{
+    width: 16%;
+    float: left;
+    margin: 2px;
+}
+.dato input{
+    width: 30%;
+    float: left;
+    margin: 2px;
+}
+
+#cambiarPass{
+    float: left;
+}
+
+.contenidoSectionAdmin{
+    float: left;
+    width: 80%;
+    margin-left: 20px;
+    border: 1px red solid;
+    background-color: #ff5f5f;
+}
+.tituloSection{
+    text-align: center;
+}
+
+.adm_categorias,.adm_productos{
+    float: left;
+    width: 45%;
+    margin: 10px;
+}
+
+.adm_categorias{
+    margin-right: 0;
+}
+
+.adm_productos{
+    margin-left: 0;
+}
+
+.adm_usuarios{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.adm_titulo{
+    font-size: 2em;
+}
+
+.nota{
+    font-size: small;
+}
+
+.adm_usuarios input[type="submit"]{
+    width: 250px;
+    margin-top: 5px;
+}
+
+.contenidoSectionUser{
+    float: left;
+    width: 80%;
+    margin-left: 20px;
+    border: 1px red solid;
+    background-color: #3bf4a0;
+}
+
+.boton_comprar{
+    display: block;
+    float: right;
+    margin-right: 8px;
+}
+
+.pedido{
+    border: 1px #ff9900 solid;
+    background-color: #fcc97e;
+    margin: 5px;
+}
+
+.pedido:hover{
+    background-color: #fff2be;
+}
